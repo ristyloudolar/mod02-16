@@ -1,0 +1,445 @@
+/*
+*
+* CSS Reset
+*
+*/
+* {
+	padding: 0;
+	margin: 0;
+	box-sizing: border-box;
+}
+
+/*
+*
+* General Rules
+*
+*/
+
+body {
+	font-family: 'Raleway', sans-serif;
+}
+
+header {
+	min-height: 10vh;
+	background-color: #424242;
+}
+
+main {
+	/*min-height: 80vh;*/
+	background-color: grey;
+}
+
+main > div.left,
+main > div.right {
+	/*min-height: 100vh;*/
+	color: black;
+}
+
+main > div.left {
+	background-color: #fcfc62;
+	padding: 15px;
+}
+
+
+main > div.right {
+	background-color: #feffea;
+	padding: 15px;
+}
+
+
+
+footer {
+	/*min-height: 20vh;*/
+	background-color: orange;
+}
+
+
+
+[id^="col"] {
+	/*min-height: 30vh;*/
+}
+
+#col1 {
+	background-color: #c9c9c9;
+}
+
+#col2 {
+	background-color: #c9c9c9;
+}
+
+#col3 {
+	background-color: #c9c9c9;
+}
+
+#col4 {
+	background-color: #c9c9c9;
+}
+
+.row:after {
+	content: "";
+	display: block;
+	clear: both;
+}
+
+
+
+/*
+*
+* Custom CSS Fluid Grid System
+*
+*/
+.container {
+	width: 80vw;
+	margin: 0 auto;	
+}
+
+.container-fluid {
+	width: 100vw;
+}
+
+
+[class*="col"] {
+	float: left;
+}
+
+
+
+/*
+*
+* Desktop Devices
+*
+*/
+
+@media only screen and (min-width: 961px) {
+
+	main > div > div {
+		padding-top: 15px;
+	}
+
+	main > div > div > h2 {
+		/*padding-top: 15px;*/
+		padding-bottom: 15px;
+		text-align: center;
+	}
+
+	main > div > div > img {
+		width: 100%;
+	}
+
+	main > div > div > p {
+		padding-top: 15px;
+	}
+
+	main > div.left {
+		border-right: 2px solid black;
+	}
+
+	footer > div {
+		padding: 10px;
+		
+	}
+
+	div#col1,
+	div#col2,
+	div#col3 {
+		border-right: 1px solid black;
+	}
+	
+	footer > div > img {
+		/*width: 100%;*/
+		width: 50%;
+		float: left;
+		padding-right: 10px;
+		/*padding-bottom: 10px;*/
+	}
+
+	footer > div > h2 {
+		font-size: 18px;
+	}
+
+	footer > div > p {
+		text-align: justify;
+	}
+
+	.col-lg-1 {
+		width: 8.33%; /* 100% / 12 = 8.33% */
+	}
+
+	.col-lg-2 {
+		width: 16.66%;
+	}
+
+	.col-lg-3 {
+		width: 25%;
+	}
+
+	.col-lg-4 {
+		width: 33.33%;
+	}
+
+	.col-lg-5 {
+		width: 41.66%;
+	}
+
+	.col-lg-6 {
+		width: 50%;
+	}
+
+	.col-lg-7 {
+		width: 58.33%;
+	}
+
+	.col-lg-8 {
+		width: 66.66%;
+	}
+
+	.col-lg-9 {
+		width: 75%;
+	}
+
+	.col-lg-10 {
+		width: 83.33%;
+	}
+
+	.col-lg-11 {
+		width: 91.66%;
+	}
+
+	.col-lg-12 {
+		width: 100%;
+	}	
+}
+
+
+
+
+/*
+*
+* Tablet Devices
+*
+*/
+
+@media only screen and (min-width: 401px) and (max-width: 960px) {
+
+	/*[class*="col"] {
+	float: none;
+	}*/
+
+
+	/*main > div > div {
+		padding-top: 15px;
+	}*/
+
+	main > div > div > h2 {
+		/*padding-top: 15px;*/
+		padding-bottom: 15px;
+		text-align: left;
+	}
+
+	main > div > div > img {
+		float: left;
+		padding-right: 15px;
+		width:50%;
+	}
+
+	main > div.left > div > img {
+		padding-bottom: 15px;
+	}
+
+	main > div > div > p {
+		padding-bottom: 15px;
+	}
+
+	main > div.right > div {
+		float: left;
+	}
+
+	
+
+	footer > div {
+		padding: 10px;
+		float: left;
+		
+	}
+	
+	footer > div > img {
+		width: 50%;
+		float: left;
+		padding-right: 10px;
+		
+	}
+
+	footer > div > h2 {
+		font-size: 18px;
+		padding-bottom: 5px;
+	}
+
+	footer > div > p {
+		text-align: justify;
+	}
+
+	
+	.container {
+		width: 100vw;
+	}
+
+	.col-md-1 {
+		width: 8.33%; /* 100% / 12 = 8.33% */
+	}
+
+	.col-md-2 {
+		width: 16.66%;
+	}
+
+	.col-md-3 {
+		width: 25%;
+	}
+
+	.col-md-4 {
+		width: 33.33%;
+	}
+
+	.col-md-5 {
+		width: 41.66%;
+	}
+
+	.col-md-6 {
+		width: 50%;
+	}
+
+	.col-md-7 {
+		width: 58.33%;
+	}
+
+	.col-md-8 {
+		width: 66.66%;
+	}
+
+	.col-md-9 {
+		width: 75%;
+	}
+
+	.col-md-10 {
+		width: 83.33%;
+	}
+
+	.col-md-11 {
+		width: 91.66%;
+	}
+
+	.col-md-12 {
+		width: 100%;
+	}
+}
+
+/*
+*
+* Mobile Devices
+*
+*/
+
+@media only screen and (max-width: 400px) {
+
+	main > div > div > h2 {
+		/*padding-top: 15px;*/
+		padding-bottom: 15px;
+		text-align: center;
+	}
+
+	main > div > div > img {
+		/*float: left;*/
+		/*padding-right: 15px;*/
+		width:100%;
+	}
+
+	main > div > div > img {
+		padding-bottom: 15px;
+	}
+
+	main > div > div > p {
+		padding-bottom: 15px;
+	}
+
+	/*main > div.right > div {
+		float: left;
+	}*/
+
+	
+
+	footer > div {
+		padding: 10px;
+		/*float: left;*/
+	}
+	
+	footer > div > img {
+		width: 100%;
+		/*float: left;*/
+		padding-right: 10px;
+		
+	}
+
+	footer > div > h2 {
+		font-size: 18px;
+		padding-top: 5px;
+		padding-bottom: 5px;
+		text-align: center;
+	}
+
+	footer > div > p {
+		text-align: justify;
+	}
+
+	.container {
+		width: 100vw;
+	}
+
+	.col-sm-1 {
+		width: 8.33%; /* 100% / 12 = 8.33% */
+	}
+
+	.col-sm-2 {
+		width: 16.66%;
+	}
+
+	.col-sm-3 {
+		width: 25%;
+	}
+
+	.col-sm-4 {
+		width: 33.33%;
+	}
+
+	.col-sm-5 {
+		width: 41.66%;
+	}
+
+	.col-sm-6 {
+		width: 50%;
+	}
+
+	.col-sm-7 {
+		width: 58.33%;
+	}
+
+	.col-sm-8 {
+		width: 66.66%;
+	}
+
+	.col-sm-9 {
+		width: 75%;
+	}
+
+	.col-sm-10 {
+		width: 83.33%;
+	}
+
+	.col-sm-11 {
+		width: 91.66%;
+	}
+
+	.col-sm-12 {
+		width: 100%;
+	}
+}
+
+
